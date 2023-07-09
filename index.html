@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
     <header>
@@ -27,29 +27,30 @@
             </div>
         </div>
     </header>
-    <section class="result">
-        <p class="p1 opacy" id="result_screen_one">0</p>
-        <p class="p1" id="result_screen">0</p>
+    <section class="output">
+        <p data-previous-operand class="p1 opacy" id="previous-operand"></p>
+        <p data-current-operand class="p1" id="current-operand"></p>
     </section>
     <section class="operations">
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button class="num del">DEL</button>
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button class="num">+</button>
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button class="num">-</button>
-        <button class="num">.</button>
-        <button class="num">0</button>
-        <button class="num">/</button>
-        <button class="num">x</button>
-        <button class="num reset" id="reset">RESET</button>
-        <button class="num count" id="count">=</button>
+        <button data-number class="num">7</button>
+        <button data-number class="num">8</button>
+        <button data-number class="num">9</button>
+        <button data-delete class="num del">DEL</button>
+        <button data-number class="num">4</button>
+        <button data-number class="num">5</button>
+        <button data-number class="num">6</button>
+        <button data-operation class="num">+</button>
+        <button data-number class="num">1</button>
+        <button data-number class="num">2</button>
+        <button data-number class="num">3</button>
+        <button data-operation class="num">-</button>
+        <button data-number class="num">.</button>
+        <button data-number class="num">0</button>
+        <button data-operation class="num">/</button>
+        <button data-operation class="num">x</button>
+        <button data-all-clear class="num reset" id="reset">RESET</button>
+        <button data-equals class="num count" id="count">=</button>
     </section>
+    <script src="./js.js"></script>
 </body>
 </html>
