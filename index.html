@@ -8,49 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="./js.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
-    <header>
-        <div class="theme-numbers">
-            <p class="one">1</p>
-            <p class="two">2</p>
-            <p class="three">3</p>
-        </div>
-        <div class="two-cont">
-            <div class="two-contt">
-                <h2>calc</h2>
-                <p>THEME</p>
+    <div class="cont1">
+        <header>
+            <div class="theme-numbers">
+                <p id="theme-1" class="one">1</p>
+                <p id="theme-2" class="two">2</p>
+                <p id="theme-3" class="three">3</p>
             </div>
-            <div class="tog-cont">
-                <input type="range" min="1" max="3" value="1" id="rangeInput"
+            <div class="two-cont">
+                <div class="two-contt">
+                    <h2>calc</h2>
+                    <p>THEME</p>
+                </div>
+                <div class="tog-cont">
+                    <input type="range" min="1" max="3" value="1" id="rangeInput"
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="output">
-        <p data-previous-operand class="p1 opacy" id="previous-operand"></p>
-        <p data-current-operand class="p1" id="current-operand"></p>
-    </section>
-    <section class="operations">
-        <button data-number class="num">7</button>
-        <button data-number class="num">8</button>
-        <button data-number class="num">9</button>
-        <button data-delete class="num del">DEL</button>
-        <button data-number class="num">4</button>
-        <button data-number class="num">5</button>
-        <button data-number class="num">6</button>
-        <button data-operation class="num">+</button>
-        <button data-number class="num">1</button>
-        <button data-number class="num">2</button>
-        <button data-number class="num">3</button>
-        <button data-operation class="num">-</button>
-        <button data-number class="num">.</button>
-        <button data-number class="num">0</button>
-        <button data-operation class="num">/</button>
-        <button data-operation class="num">x</button>
-        <button data-all-clear class="num reset" id="reset">RESET</button>
-        <button data-equals class="num count" id="count">=</button>
-    </section>
-    <script src="./js.js"></script>
-</body>
-</html>
+        </header>
+        <section class="output">
+            <p data-previous-operand class="p1 opacy" id="previous-operand">0</p>
+            <p data-current-operand class="p1" id="current-operand">0</p>
+        </section>
+        <section class="operations">
+            <button data-number class="num">7</button>
+            <button data-number class="num">8</button>
+            <button data-number class="num">9</button>
+            <button data-delete class="num del">DEL</button>
+            <button data-number class="num">4</button>
+            <button data-number class="num">5</button>
+            <button data-number class="num">6</button>
+            <button data-operation class="num">+</button>
+            <button data-number class="num">1</button>
+            <button data-number class="num">2</button>
+            <button data-number class="num">3</button>
+            <button data-operation class="num">-</button>
+            <button data-number class="num">.</button>
+            <button data-number class="num">0</button>
+            <button data-operation class="num">/</button>
+            <button data-operation class="num">x</button>
+            <button data-all-clear class="num reset" id="reset">RESET</button>
+            <button data-equals class="num count" id="count">=</button>
+        </section>
+    </div>

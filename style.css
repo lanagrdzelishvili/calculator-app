@@ -57,6 +57,7 @@ header {
     width: 330px;
     display: flex;
     flex-direction: column;
+    padding-right: 7px;
 }
 .theme-numbers {
     color: var(--White);
@@ -111,16 +112,17 @@ input[type="range"]::-webkit-slider-thumb {
     height: 80px;
     background-color: var(--screen-bg);
     border-radius: 10px;
-    margin: 20px;
-    padding: 10px 20px;
+    margin: 15px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 14px;
     word-wrap: break-word;
     word-break: break-all;
 }
 .p1 {
-   font-size: 40px;
+   font-size: 30px;
    line-height: 37px;
    letter-spacing: 0.666666px;
    color: var(--White); 
@@ -170,7 +172,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 133px;
     background: var(--first-bg);
     box-shadow: inset 0px -4px 0px var(--key-shadow);
-    color: var(--key-bg-light);
+    color: var(--White);
     background: var(--key-bg);
     font-size: 20px;
     line-height: 18px;
@@ -204,7 +206,6 @@ input[type="range"]::-webkit-slider-thumb {
     .output {
         width: 510px;
         height: 120px;
-        padding: 16px 30px;
         gap: 20px;
     }
     .p1 {
