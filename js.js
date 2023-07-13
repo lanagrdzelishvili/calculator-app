@@ -142,10 +142,16 @@ function changeTheme(theme) {
         root.style.setProperty('--key-Grayish-orange', 'hsl(28, 16%, 65%)');
         root.style.setProperty('--Very-dark-grayish-blue', 'hsl(221, 14%, 31%)');
         root.style.setProperty('--White', 'hsl(0, 0%, 100%)');
+        document.getElementById('calc').style.color = 'white'
+        document.getElementById('th').style.color = 'white'
+        document.getElementById('current-operand').style.color = 'white'
+        document.querySelectorAll('.theme-numbers p').forEach(element => {
+            element.style.color = 'white'
+        });
     } else if (theme === '2') {
         root.style.setProperty('--first-bg', 'hsl(0, 0%, 90%)');
         root.style.setProperty('--kaypad-bg', 'hsl(0, 5%, 81%)');
-        root.style.setProperty('--screen-bg', 'hsl(0, 0%, 93%)');
+        root.style.setProperty('--screen-bg', 'hsl(35, 11%, 81%)');
         root.style.setProperty('--key-bg', 'hsl(185, 42%, 37%)');
         root.style.setProperty('--key-shadow', 'hsl(185, 58%, 25%)');
         root.style.setProperty('--key-toggle', 'hsl(25, 98%, 40%)');
@@ -154,6 +160,12 @@ function changeTheme(theme) {
         root.style.setProperty('--key-Grayish-orange', 'hsl(35, 11%, 61%)');
         root.style.setProperty('--Very-dark-grayish-blue', 'hsl(60, 10%, 19%)');
         root.style.setProperty('--White', 'hsl(0, 0%, 100%)');
+        document.getElementById('calc').style.color = 'black'
+        document.getElementById('th').style.color = 'black'
+        document.getElementById('current-operand').style.color = 'black'
+        document.querySelectorAll('.theme-numbers p').forEach(element => {
+            element.style.color = 'black'
+        });
     } else if (theme === '3') {
         root.style.setProperty('--first-bg', 'hsl(268, 75%, 9%)');
         root.style.setProperty('--kaypad-bg', 'hsl(268, 71%, 12%)');
@@ -166,9 +178,14 @@ function changeTheme(theme) {
         root.style.setProperty('--key-Grayish-orange', 'hsl(290, 70%, 36%)');
         root.style.setProperty('--Very-dark-grayish-blue', 'hsl(52, 100%, 62%)');
         root.style.setProperty('--White', 'hsl(0, 0%, 100%)');
+        document.getElementById('calc').style.color = 'hsl(52, 100%, 62%)'
+        document.getElementById('th').style.color = 'hsl(52, 100%, 62%)'
+        document.getElementById('current-operand').style.color = 'hsl(52, 100%, 62%)'
+        document.querySelectorAll('.theme-numbers p').forEach(element => {
+            element.style.color = 'hsl(52, 100%, 62%)'
+        });
     }
 }
-
 
 themeNumbers.forEach((themeNumber, index) => {
     themeNumber.addEventListener('click', () => {
